@@ -2,7 +2,7 @@
 /*============================================
     ; Title: Assignment 3.2
     ; Author: Richard Krasso
-    ; Date: 2 March 2020
+    ; Date: 4 March 2020
     ; Modified By: Rhonda Rivas
     ; Description: This program demonstrates the
     ; use of JavaScript function if and else
@@ -13,7 +13,7 @@
 
   FirstName Rivas
   Exercise 3.2
-  2 March 2020
+  4 March 2020
 
   // output from the match() function
   false

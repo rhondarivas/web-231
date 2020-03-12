@@ -16,6 +16,7 @@
  * Disclaimer: Do not remove this function as this is what you will be using to generate a random number
  */
 
+ 
 var count = 5;
 function match(cars1, cars1) {
     if (cars1 === cars1)
