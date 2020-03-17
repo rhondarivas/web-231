@@ -18,7 +18,11 @@ Lasagna
 Paella
 
 */
-var faveFoods =["Pizza", "Chipotle", "Chicken Spinach Salad", "Lasagna", "Paella"];
+//array of 5 fave foods
+const faveFoods =["Pizza", "Chipotle", "Chicken Spinach Salad", "Lasagna", "Paella"];
 
-faveFoods.forEach(function(faveFoods)
-{console.log(faveFoods)});
+//output
+
+faveFoods.forEach((faveFoods) => {
+    console.log(faveFoods);
+})
