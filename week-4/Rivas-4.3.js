@@ -36,7 +36,7 @@ function getValue(arr, val) {
 }
 
 console.log("-- DISPLAYING ARRAY ITEMS --");
-for (var x = 0; x < vehicles.length; x++) {
+    for (var x = 0; x < vehicles.length; x++) {
     console.log(vehicles[x]);
 }
 console.log("")
