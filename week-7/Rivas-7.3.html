@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+  
+  <link rel="stylesheet" href="https://github.com/rhondarivas/web-231/blob/master/site.css">
+</head>
+<body>
+
+<div id="list"></div>
+<script>
+    document.write("<h1>Grocery List</h1>")
+</script>
+<p>
+    </p>
+    <ol>
+        <li>Bottled Water</li>
+        <li>Wet Wipes</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Bread</li>
+    </ol>
+    <p>
+    </p>
+
+<h1 id="list"></h1>
+<script>
+    document.getElementById('list').innerHTML = "Rhonda's Grocery List ";
+</script>
+
+<div id="items"></div>
+<script>
+    document.getElementById('items').innerHTML ="<h1>Grocery List</h1>" +
+    "<table>" +
+    "<thead>" +
+    "<tr>" +
+    "<th> List Item(s)</th>"+
+    "</tr>" +
+    "</thead>" +
+    "<tbody>" +
+    "<tr><td>Bottled Water</td></tr>"+
+    "<tr><td>Wet Wipes</td></tr>"+
+    "<tr><td>Milk</td></tr>"+
+    "<tr><td>Eggs</td></tr>"+
+    "<tr><td>Bread</td></tr>"+
+    "</tbody>" +
+    "</table>"
+</script>
+</body>
+</html>
