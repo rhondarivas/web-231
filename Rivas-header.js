@@ -2,7 +2,7 @@
 ============================================
 ; Title:  header.js
 ; Author: Professor Krasso 
-; Date:   25 June 2017
+; Date:   26 February 2020
 ; Description: Displays a formatted header
 ;===========================================
 */
@@ -18,3 +18,7 @@ exports.display = function (firstName, lastName, assignment) {
 
   return output
 }
+//To insert in other programs/test
+//const header = require('./Rivas-header.js');
+
+//console.log(header.display("Rhonda", "Rivas", "Assignment 2.2"));
