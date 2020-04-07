@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../site.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<Title>Rhonda Rivas - jQuery 8.3</Title>
+<p></p>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#fruit">Fruit</a>
+    <a href="#contact">Contact</a>
+  </div>
+<style type="text/css">
+
+.topnav {
+      overflow: hidden;
+      background-color: #F3C2E1;
+    }
+ </style>
+<br>
+<h1>Lorem ipsum Text</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Fusce sit amet aliquam eros, eget aliquam odio. Fusce nunc sem, aliquam egestas tristique in, facilisis ut dui. 
+    Donec sed tempor risus. Sed tincidunt in dui eu dapibus. Quisque eu nulla pulvinar, vulputate nunc quis, porta metus. I
+    nteger mollis purus at feugiat lobortis. Maecenas quis suscipit lacus, eu porta velit. Mauris sit amet nulla ut augue egestas finibus a in ligula. 
+    Quisque nisl nulla, ultrices ac justo ut, vestibulum facilisis metus.</p>
+<p></p>
+</br>
+<button type ="button">Toggle Paragraph</button>
+</button>
+<script type="text/javascript">
+
+$ ("button").click(function(){
+    $("p").toggle();
+});
+</script>
+<p></p>
+<br/>
+<style>
+    table {
+      border-collapse: collapse;
+      width: 15%;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 2px;
+    }
+    
+    tr:nth-child(even){background-color: #e09add}
+    
+    </style>
+<table>
+    <tr>
+        <td><a href="#" class="fruitId">1</a></td>
+        <td>Apples</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">2</a></td>
+        <td>Strawberries</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">3</a></td>
+        <td>Bananas</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">4</a></td>
+        <td>Oranges</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruitId">5</a></td>
+        <td>Blueberries</td>
+    </tr>
+</table>
+<script>
+    $(function () {
+        $("p").click(function () {
+            $(this).css("background-color", "");
+            $(this).css("color", "");
+            $(this).css("padding-top", "20px");
+            $(this).css("padding-left", "20px");
+        });
+
+        $(".fruitId").click(function (event) {
+            event.preventDefault();
+            var fruitId = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+        });
+    });
+</script>      
+
+
+
+
+
+</body>
+</html>

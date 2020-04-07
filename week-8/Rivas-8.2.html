@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic HTML 8.2 Rivas</title>
+    <link rel="stylesheet" href="../site.css">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+<style type="text/css">
+
+ul {
+    list-style, none
+    }
+  </style>
+</script>
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#fruit">Fruit</a>
+    <a href="#contact">Contact</a>
+  </div>
+<style type="text/css">
+
+.topnav {
+  overflow: hidden;
+  background-color: #F3C2E1;
+}
+  </style>
+<div id="fruits"></div>
+
+<script> 
+
+var fruits = ["Apples", "Bananas", "Cherries", "Oranges", "Blueberries"];
+
+    var list = "<h2>Types of Fruit</h2><ul>";
+    for (var x = 0; x < fruits.length; x++) {
+        list += "<ul>" + fruits[x] + "</ul>";
+    }
+    list += "</ul>";
+
+document.getElementById('fruits').innerHTML = list;
+jQuery(document).ready(function(){ 
+
+$('#fruits').css({
+    margin: '0 auto',
+    backgroundColor: '#EC55B4',
+    textAlign: 'center',
+    fontSize: '20px',
+    paddingTop: '20px'
+
+
+});
+});
+</script>
+</head>
+</body>
+</html>
