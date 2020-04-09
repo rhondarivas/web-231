@@ -3,61 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Rivas Assignment 8.4</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- you will need to the href to point to your root directories css file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../site.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <head>
 <body>
-<script>
-  const employee= {
-    id: 'Employee #',
-    firstName: 'Employee First Name',
-    lastName: 'Employee Last Name',
-    title: 'Employee Title'
-};
-  console.log(""); //new line
 
-function Employee(id, firstName,lastName,title) {
+  <style type="text/css">
+    tr:hover {
+          cursor: pointer;
+          background-color: #ffff99;
+    }
+</style>
+</head>
 
-    this.id = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.title = title;
-  }
-var employees = [
-    new Employee("2001", "Michael", "Jordan", "Director"),
-    new Employee("2003", "Barry", "Larkin", "OPS Manager"),
-    new Employee("1997", "Wil", "Trapp", "Art Director"),
-    new Employee("2009", "Boomer", "Easison", "Coordinator"),
-    new Employee("1994", "Johnny", "Bench", "Music Director")
-];
-
-  let index = 1
-  for (let x = 0; x < employees.length; x++) {
-    console.log(index + '. ' + "Employee #: " + employees[x].id + " - " + employees[x].firstName + " " + employees[x].lastName 
-    + ", " + employees[x].title)
-    index++
-  }
+<body>
   <div id="emps"></div>
 
+<script type="text/javascript">
+function employee(id, firstName, lastName, title){
+        this.id=id;        
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.title = title;
+    }
 
-  // jQuery onClick event
-  // Don't remove this, just add your code to the body of the event (curly braces)
-  $(function () {
-    $("table tr").click(function () {
+var employee = [
+  new employee("11111", "Barry", "Larkin", "Owner"),
+  new employee("00444", "Eric", "Davis", "Production Manager"),
+  new employee("10010", "Lionel", "Messi", "Media Analyst"),
+  new employee("23023", "Michael", "Jordan", "Sports Director"),
+  new employee("32020", "Jimmy", "Fallon", "People Experience"),]
 
-    })
-  });
-</script>
-  
-  </style>
+var out = "<h2>Employee Name</h2><table><tr><th>ID #</th><th>First Name</th><th>Last Name</th><th>Title</th></tr>"; 
+    for(var x=0; x< employee.length; x++){
+        out += "<tr><td>" + employee[x].id + "</td>"
+            + "<td>" + employee[x].firstName + "</td>" 
+            + "<td>" + employee[x].lastName + "</td>"
+            + "<td>" + employee[x].title + "</td>"
+            + "</tr>"
+    }
+    out += "</table>"
 
+    document.getElementById('emps').innerHTML = out;
+    $(function () {
+    $("table tr").click(function getEmployee(){
+       //$("tr:first"
+       for(var x=0; x< employee.length; x++){
+           //if ($("tr: first")===employee[x].id){
+           alert("Id: " + employee[x].id + ", First Name: " + employee[x].firstName + ", Last Name: " + employee[x].lastName + ", Title: " + employee[x].title)
+    }})});
+        
 
-
+   // })
+  //});
 </script>
 </body>
-</head>
 </html>
