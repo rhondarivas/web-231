@@ -1,2 +1,1 @@
-# web-231
-Introduction to JavaScript
+# rhondarivas.github.io
